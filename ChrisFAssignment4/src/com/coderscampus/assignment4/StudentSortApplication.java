@@ -12,7 +12,7 @@ public class StudentSortApplication {
 		Student[] students = fileService.readFile();
 		
 		fileService.writeFile(studentService.SortCompSci(students), "course1.csv");
-		fileService.writeFile(studentService.SortApMath(students), "course2.csv");
+		fileService.writeFile(studentService.SortApMth(students), "course2.csv");
 		fileService.writeFile(studentService.SortStat(students),  "course3.csv");
 		
 	}

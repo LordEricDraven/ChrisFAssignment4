@@ -33,15 +33,15 @@ public class StudentService {
 		return stat;
 	}
 	
-	public Student[] SortApMath(Student[] students) {
-		Student[] apMath = new Student[33];
+	public Student[] SortApMth(Student[] students) {
+		Student[] apMth = new Student[33];
 		int i = 0;
 		for (Student student:students) {
-			if(student.getCourse().contains("APMATH")) {
-				apMath[i++] = new Student(student.getStudentId(), student.getStudentName(), student.getCourse(), student.getGrade());
+			if(student.getCourse().contains("APMTH")) {
+				apMth[i++] = new Student(student.getStudentId(), student.getStudentName(), student.getCourse(), student.getGrade());
 			}
 		}
-		return apMath;
+		return apMth;
 	}
 	
 	public String WriteStudent(Student student) {
